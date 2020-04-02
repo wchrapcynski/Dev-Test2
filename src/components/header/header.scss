@@ -1,0 +1,85 @@
+.header {
+  background-color: #37a5e7;
+  height: 150px;
+  .header-main {
+    display: grid;
+    grid-template: "left . right" 1fr / 1fr 4fr 1fr;
+    height: 100%;
+    .header-left {
+      grid-area: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+    }
+    .header-right {
+      grid-area: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      .header-social-media {
+        display: flex;
+      }
+    }
+  }
+}
+
+.logo {
+  background-image: url("../../assets/SamanthaHall_Logo.png");
+  width: 250px;
+  height: 125px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.twitter,
+.facebook {
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+}
+.twitter {
+  background-image: url("../../assets/twitter.svg");
+}
+.facebook {
+  background-image: url("../../assets/facebook.svg");
+}
+.donate {
+  height: 60px;
+  width: 144px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0 5px;
+  background-image: url("../../assets/donate.svg");
+}
+
+@media only screen and (max-width: 550px) {
+  .logo {
+    height: 100px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .donate {
+    height: 50px;
+    width: 118px;
+  }
+  .header-right {
+    flex-direction: column;
+  }
+  .header-social-media {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  .twitter,
+  .facebook {
+    padding: 0;
+    height: 40px;
+    width: 40px;
+  }
+}
