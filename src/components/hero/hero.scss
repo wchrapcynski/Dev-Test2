@@ -6,8 +6,9 @@
   background-position: center;
   background-size: cover;
   width: 100vw;
-  height: 600px;
+  height: 500px;
   display: grid;
+  overflow: hidden;
   grid-template:
     "hero-left headline" 1fr
     "hero-left signup" 1fr
@@ -32,6 +33,7 @@
     align-items: flex-end;
     height: 100%;
     .hero-headline-text {
+      margin-bottom: 30px;
       p {
         font-size: 3em;
         font-weight: 600;
@@ -45,7 +47,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 20px;
   }
 }
 
