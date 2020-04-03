@@ -1,0 +1,52 @@
+@import "../../var.scss";
+
+.hero {
+  background-image: url("../../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 600px;
+  display: grid;
+  grid-template: 
+    "hero-left headline" 1fr
+    "hero-left signup" 1fr 
+    
+    / 1fr 1fr;
+  .hero-left {
+    grid-area: hero-left;
+    display: flex;
+    justify-content: flex-end;
+    .hero-sam {
+      background-repeat: no-repeat;
+      background-position-y: 30px;
+      background-image: url("../../assets/samanth.svg");
+      height: 600px;
+      width: 250px;
+      margin-right: 20px;
+    }  
+  }
+  .hero-right {
+    .hero-headline {
+      grid-area: headline;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      height: 100%;
+      p {
+        font-size: 3em;
+        font-weight: 600;
+        margin: 0;
+        color: $light-blue;
+      }
+    }
+    .hero-signup {
+      grid-area: signup;
+    }
+  }
+}              
+
+.dark-blue {
+  color: $dark-blue;
+}

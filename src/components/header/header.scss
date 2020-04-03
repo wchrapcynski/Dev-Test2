@@ -1,5 +1,7 @@
+@import "../../var.scss";
+
 .header {
-  background-color: #37a5e7;
+  background-color: $light-blue;
   height: 150px;
   .header-main {
     display: grid;
