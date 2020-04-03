@@ -58,3 +58,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .footer {
+    .footer-text {
+      font-size: 0.5em;
+    }
+    .footer-paidfor {
+      width: 200px;
+      text-align: center;
+    }
+  }
+}

@@ -79,3 +79,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .hero {
+    .hero-headline {
+      .hero-headline-text {
+        p {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
