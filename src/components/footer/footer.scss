@@ -8,7 +8,9 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 0;
-  color: $white;
+  .footer-signup {
+    display: none;
+  }
   .footer-logo {
     background-image: url("../../assets/SamanthaHall_Logo_reversed.png");
     background-repeat: no-repeat;
@@ -18,14 +20,17 @@
     height: 100px;
   }
   .footer-address {
+    color: $white;
     margin: 10px 0;
   }
   .footer-text {
+    color: $white;
     a {
       color: $white;
     }
   }
   .footer-paidfor {
+    color: $white;
     margin-top: 10px;
     padding: 5px 30px;
     border: 1px solid $white;
@@ -34,6 +39,10 @@
 
 @media only screen and (max-width: 550px) {
   .footer {
+    .footer-signup {
+      display: block;
+      margin-bottom: 20px;
+    }
     .footer-text {
       font-size: 0.7em;
     }

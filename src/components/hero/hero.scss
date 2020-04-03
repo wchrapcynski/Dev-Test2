@@ -25,14 +25,13 @@
       margin-right: 20px;
     }
   }
-  .hero-right {
-    .hero-headline {
-      grid-area: headline;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-      height: 100%;
+  .hero-headline {
+    grid-area: headline;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    .hero-headline-text {
       p {
         font-size: 3em;
         font-weight: 600;
@@ -40,9 +39,13 @@
         color: $light-blue;
       }
     }
-    .hero-signup {
-      grid-area: signup;
-    }
+  }
+  .hero-signup {
+    grid-area: signup;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
   }
 }
 
@@ -57,12 +60,15 @@
         margin: 0;
       }
     }
-    .hero-right {
-      .hero-headline {
+    .hero-headline {
+      .hero-headline-text {
         p {
           font-size: 2em;
         }
       }
+    }
+    .hero-signup {
+      display: none;
     }
   }
 }
