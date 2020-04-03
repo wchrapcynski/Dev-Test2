@@ -9,6 +9,7 @@
   height: 500px;
   display: grid;
   overflow: hidden;
+  max-width: $maxwidth;
   grid-template:
     "hero-left headline" 1fr
     "hero-left signup" 1fr

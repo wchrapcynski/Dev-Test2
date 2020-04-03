@@ -3,6 +3,7 @@
 .header {
   background-color: $light-blue;
   height: 150px;
+  max-width: $maxwidth;
   .header-main {
     display: grid;
     grid-template: "left . right" 1fr / 1fr 4fr 1fr;

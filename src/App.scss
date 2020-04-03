@@ -3,4 +3,7 @@
 .App {
   width: 100vw;
   background-color: $light-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
